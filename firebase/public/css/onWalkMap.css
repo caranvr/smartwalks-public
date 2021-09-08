@@ -1,0 +1,67 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+iframe {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	z-index: 1000;
+}
+
+#map {
+	position: absolute;
+	top: 0;
+	bottom: 7.5%;
+	width: 100%;
+	z-index: 0;
+	border: none;
+}
+
+#button-menu {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	bottom: 0;
+	height: 7.5%;
+}
+
+.inactive-btn {
+	color: #888888;
+}
+
+.popup-info {
+	position: absolute;
+	bottom: 10%;
+	display: block;
+	z-index: 100;
+	width: 95%;
+	margin-left: 2.5%;
+}
+
+.card-body .card-title {
+	font-size: 1.2rem;
+	font-weight: 700;
+	font-family: 'Montserrat';
+}
+
+.card-body .card-text {
+	font-size: 0.8rem;
+}
+
+.popup-info .btn-close {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	z-index: 104;
+}

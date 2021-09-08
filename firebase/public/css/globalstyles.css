@@ -1,0 +1,48 @@
+/*html, body {
+	height: 100%;
+}*/
+
+body {
+	margin: 0;
+	background-color: #FFF;
+	box-sizing: border-box;
+}
+
+h2, .title {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+	font-weight: 700;
+	letter-spacing: 0.2em;
+}
+
+h1 {
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+	font-weight: 300;
+}
+
+p {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+
+#home-wrapper {
+	margin-top: 30%;
+}
+
+.survey-wrapper {
+	text-align: center;
+	color: #02284A;
+}
+
+.btn-primary {
+  background-color: #00A0B8;
+  border: none;
+  font-size: 1.2em;
+}
+

@@ -1,0 +1,217 @@
+html {
+  font-size: 72.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #152A36;
+  font: 1.4rem 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+/* map canvas */
+#map {
+  /*position: absolute;
+  top: 0;
+  left: 0;*/
+  height: 60%;
+  width: 100%;
+  z-index: 9;
+  border: none;
+}
+
+#body-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#walk-info {
+  /*position: relative;
+  bottom: 0;*/
+  background-color: #FFF;
+  height: 40%;
+  width: 100%;
+  padding: 15px 25px 15px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-y: scroll;
+  z-index: 10;
+}
+
+/* search bar */
+#search-bar {
+  position: absolute;
+  top: 4rem;
+  width: 100%;
+  z-index: 1;
+}
+
+#search-bar .filter-ctrl {
+  height: 4.4rem;
+  background-color: #fff;
+}
+
+#search-bar .filter-ctrl .input-group {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #152A36;
+}
+
+#search-bar .filter-ctrl .input-group-prepend span {
+  font-size: 1.4rem;
+  background: #fff;
+  border: none;
+}
+
+#search-bar .filter-ctrl #filter-input {
+  font-size: 1.2rem;
+  height: 100%;
+  border: none;
+}
+
+/* category filter */
+.filter-group {
+  font-size: 1rem;
+  font-weight: 600;
+  position: absolute;
+  top: 9rem;
+  width: 100%;
+  z-index: 1;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.filter-group input[type='checkbox'] {
+  display: none;
+}
+
+.filter-group input[type='checkbox']+label {
+  padding: 3px 4px;
+  display: inline-block;
+  text-transform: lowercase;
+  border-radius: 3px;
+  margin: 1px;
+}
+
+.filter-group input[id='poi-healthcare']+label {
+  background-color: #B40156;
+}
+
+.filter-group input[id='poi-transport']+label{
+  background-color: #FBBB00;
+}
+
+.filter-group input[id='poi-energy']+label {
+  background-color: #00A0B8;
+}
+
+.filter-group input[id='poi-education']+label {
+  background-color: #645070;
+}
+
+.filter-group input[type='checkbox']:checked+label {
+  opacity: 1;
+}
+
+.filter-group input[type='checkbox']:not(:checked)+label {
+  opacity: 0.4;
+}
+
+/* filtered list */
+#filtered-list-wrap {
+  position: absolute;
+  top: 8.6rem;
+  width: 100%;
+  z-index:2;
+}
+
+#filtered-list-wrap .list-group {
+  border: 1px dotted #152A36;
+  border-radius:0;
+}
+
+#filtered-list-wrap .list-group .ex-sm {
+  font-size: 1rem;
+}
+
+/* pop-up info card */
+
+.popup-info {
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  display: block;
+  z-index: 1000;
+}
+
+.popup-info .btn-close {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  z-index: 4;
+}
+
+.popup-info #info-card {
+  height: 10rem;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 0px;
+}
+
+.card-body .card-title {
+  font-size: 1.2rem;
+}
+
+.card-body .card-text {
+  font-size: 0.9rem;
+}
+
+.place__nonvisual-attr-category, .place__nonvisual-attr-hashtags {
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.place__nonvisual-attr-category {
+  color: #fff;
+  background: #B40156;
+  padding: 1px 4px;
+  /* border-radius: 3px; */
+  border: none;
+}
+
+.place__nonvisual-attr-hashtags {
+  background: #fff;
+  padding: 2px 0;
+}
+
+/* Bottom bar */
+#nav-bottom {
+  height: 8.4%;
+  z-index: 1;
+}
+
+#nav-bottom button {
+  background-color: #fff;
+}
+
+#nav-bottom button:active {
+  background-color: #fff;
+}
+
+#nav-bottom button i {
+  opacity: 0.4;
+  font-size: 1.6rem;
+}
+
+#nav-bottom button.active i {
+  opacity: 1;
+}

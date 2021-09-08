@@ -1,0 +1,24 @@
+.survey-wrapper {
+	width: 85%;
+	margin: auto;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	height: 100%;
+}
+
+h2 {
+	margin-top: 1em;
+	font-size: 1.4em;
+	font-weight: 100;
+}
+
+.btn-primary {
+	background-color: #00A0B8;
+	border: none;
+	margin: 20px 0 20px 0;
+}
+
+#continue, .end {
+	margin-top: 15px;
+	width: 75%;
+}
